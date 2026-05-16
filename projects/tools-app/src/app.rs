@@ -3,7 +3,7 @@ use leptos_meta::*;
 use leptos_router::*;
 
 use crate::components::parent_child::{
-    callback::Parent as ParentCallback, home::ParentChildHome,
+    callback::Parent as ParentCallback, closure::Parent as ParentClosure, home::ParentChildHome,
     write_signal::Parent as ParentWriteSignal,
 };
 
@@ -66,6 +66,7 @@ pub fn Content() -> impl IntoView {
                     <Route path="/parent-child" view=ParentChildHome>
                         <Route path="write-signal" view=ParentWriteSignal />
                         <Route path="callback" view=ParentCallback />
+                        <Route path="closure" view=ParentClosure />
                         <Route path="" view=|| view! { <p>"Click an example link."</p> } />
                     </Route>
                     <Route path="/*any" view=NotFound />
