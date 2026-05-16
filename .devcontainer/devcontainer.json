@@ -13,7 +13,8 @@
         "rust-lang.rust-analyzer",
         "vadimcn.vscode-lldb",
         "DavidAnson.vscode-markdownlint",
-        "tamasfe.even-better-toml"
+        "tamasfe.even-better-toml",
+        "FallenMax.mithril-emmet"
       ],
       "settings": {
         "extensions.ignoreRecommendations": true,
@@ -59,6 +60,10 @@
           "editor.rulers": [
             100
           ]
+        },
+        "emmet.includeLanguages": {
+          "rust": "html",
+          "*.rs": "html"
         }
       }
     }
